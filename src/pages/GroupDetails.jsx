@@ -17,7 +17,7 @@ import L from "leaflet";
 import Button from "@mui/material/Button";
 
 const customIcon = L.icon({
-  iconUrl: "/public/icon_casa.png",
+  iconUrl: "https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203077/icon_casa_h9qfc7.png",
   iconSize: [32, 38],
   iconAnchor: [16, 16],
 });
