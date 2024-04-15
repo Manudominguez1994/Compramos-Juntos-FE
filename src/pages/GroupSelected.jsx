@@ -32,7 +32,7 @@ import { styled } from "@mui/material/styles";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const customIcon = L.icon({
-  iconUrl: "/public/icon_casa.png",
+  iconUrl: "https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203077/icon_casa_h9qfc7.png",
   iconSize: [32, 38],
   iconAnchor: [16, 16],
 });

@@ -143,7 +143,7 @@ function GroupDetails() {
             {clickedPosition !== null && <Marker position={clickedPosition} />}
             <ClickMarker setClickedPositionUser={setClickedPositionUser} />
             {clickedPositionUser !== null && (
-              <Marker position={clickedPositionUser}  />
+              <Marker position={clickedPositionUser}  icon={customIcon}/>
             )}
           </MapContainer>
         </div>
