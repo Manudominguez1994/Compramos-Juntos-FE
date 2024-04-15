@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+/* Inicializar constantes que luegos usare */
+:root {
+  --color-primary: #F92B42;
+  --color-secondary: #34C759;
+  --color-buttons:#FC0B0D ;
+  --font-size-header1: 64px;
+  --font-size-header2: 32px;
+  --font-size-text1: 20px;
+  --font-size-text2: 16px;
+  --font-family:'IBM Plex Mono', monospace;
+}
+/* Estilos principales */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.content {
+ 
+  max-width: 1500px; 
+  width: 100%;
+  height: 100%;
+  margin: 0, auto;
+}
+/* Estilos del Footer */
+footer {
+  background-color: #ffffff;
+  color: #F92B42;
+  padding: 20px;
+  text-align: center;
+  width: 100%; 
+  width: 100%; 
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: bold;
+}
+.footer-content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-top: 1px solid #ccc;
+}
+.left-content p {
+  margin: 0; 
+}
+.right-content .social-icon {
+  color: black; 
+  margin-left: 10px; 
+  font-size: 20px; 
+}
+
+/* Estilos navbar */
+.navbar {
+  justify-content: space-between;
+  max-width: 85%;
+  width: 100%;
+  height: 110px;
+  padding:20px 40px 20px 40px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: none !important;
+  box-shadow: none !important; 
+}
+/* Estilos de links */
+.link-style {
+  text-decoration: none; 
+  color:#3EC1F3 ;
+  cursor: pointer; 
+}
+/* Anuncio */
+.container-Add-full{
+  width: 85%;
+  height: 100px;
+  margin-top: 50px;
+  background-color: #e2e1e1;
+  color:  #acacac;
+}
+.container-Add{
+  width: 80%;
+  height: 100px;
+  background-color: #e2e1e1;
+  color:  #acacac;
+}
+/* Estilos mapa */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+}
+.modal {
+  /* Estilos para posicionar el modal en el centro */
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  /* Otros estilos */
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error-message {
+  z-index: 999; /* Asegura que esté en la parte superior */
+}
+/*boton añadirme a un grupo*/
+.buttonAdd {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonAdd:hover {
+  background-color: #5a5959;
+}
+/* Paginas de error finish pages */
+.container-gotohome{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 650px;
+}
+.gotohome{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  font-size: var(--font-size-text1);
+  font-weight: bold;
+  color: black;
+}
