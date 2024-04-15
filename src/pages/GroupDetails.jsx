@@ -9,6 +9,7 @@ import { ProductsContext } from "../../context/product.context";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import Spinner from "react-bootstrap/Spinner";
 //Imports Map
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import ClickMarker from "../components/ClickMarker";
@@ -90,9 +91,9 @@ function GroupDetails() {
   //!Clausula de error
   if (thisGroup === null) {
     return (
-      <div>
-        <p>error</p>
-      </div>
+      <Spinner animation="border" role="status" style={{color:"#F92B42"}}>
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
     );
   }
   // console.log(thisGroup,"este grupo");

@@ -24,6 +24,7 @@ function AllGroupsFilter() {
   const { allProducts } = useContext(ProductsContext);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [errorMessage, setError] = useState("");
+  const [errorSms , setErrorMessage] = useState("")
 
   //* Grupos y grupos filtrados
   const [allGroups, setAllGroups] = useState([]);
@@ -65,6 +66,9 @@ function AllGroupsFilter() {
   //*Funciones cambio de componente
   const handleChangeComponent = (value) => {
     setVisibleComponent(value);
+    if (value === 1) {
+      setError(""); // Restablecer el mensaje de error
+    }
   };
 
   const handleSetComponent = (componentNumber, value) => {
@@ -146,6 +150,11 @@ function AllGroupsFilter() {
     setAllGruopsFilterAdd(filterDef);
     handleSetComponent(3);
     setAddVisible(false);
+    if (filterDef.length === 0) {
+      setErrorMessage("No se encontraron grupos con ese producto.");
+    } else {
+      setErrorMessage("");
+    }
   };
 
   //* Funcion de barra de busqueda
@@ -195,6 +204,7 @@ function AllGroupsFilter() {
     setSearchProduct("");
   };
 
+
   return (
     <div>
       <Navbar
@@ -226,8 +236,8 @@ function AllGroupsFilter() {
                 </Button>
               </InputGroup>
               <p style={{fontSize:"20px"}}>
-
-              {errorMessage && <p className="error-message">{errorMessage}</p>}
+              
+              {errorMessage && <p className="error-message">{errorMessage} <button className="boton-atras" onClick={() => handleChangeComponent(1)}>Volver</button></p>}
               </p>
             </div>
           </div>
@@ -342,6 +352,7 @@ function AllGroupsFilter() {
             <div className="container-allgroups-filter">
               <div className="title-allgroups">
                 <p>Grupos</p>
+               {errorSms && <p className="error-message">{errorSms}<button className="boton-atras" onClick={() => handleChangeComponent(1)}>Volver</button> </p>}
               </div>
               {allGruopsFilterAdd.map((group) => (
                 <div key={group._id} style={{ width: "100%" }}>

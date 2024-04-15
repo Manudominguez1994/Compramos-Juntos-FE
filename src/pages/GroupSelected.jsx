@@ -11,7 +11,7 @@ import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import ClickMarker from "../components/ClickMarker";
 import L from "leaflet";
 //Bostrap y miu
-
+import Spinner from "react-bootstrap/Spinner";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ClearIcon from "@mui/icons-material/Clear";
 import Table from "@mui/material/Table";
@@ -399,9 +399,9 @@ function MyPageGroup() {
   //!Clausula de error
   if (thisGroup === null) {
     return (
-      <div>
-        <p>error</p>
-      </div>
+      <Spinner animation="border" role="status" style={{color:"#F92B42"}}>
+        <span className="visually-hidden">Loading...</span>
+      </Spinner>
     );
   }
   // console.log(buttonState);
