@@ -55,7 +55,7 @@ function MyNavbar({
           <div>
           <Navbar.Brand href="#home">
             <img
-              src="front-end/public/logo_compramos_juntos.png"
+              src="public/logo_compramos_juntos.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
