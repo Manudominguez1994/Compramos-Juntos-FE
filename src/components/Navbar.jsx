@@ -77,7 +77,7 @@ function MyNavbar({
             <Navbar.Brand href="#home">
               <Link to="/" onClick={gotoHome}>
                 <img
-                  src="/public/logo_compramos_juntos.png"
+                  src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713201823/logo_compramos_juntos_fykqoh.png"
                   width="30"
                   height="30"
                   className="d-inline-block align-top"

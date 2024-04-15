@@ -23,7 +23,7 @@ function NotFound() {
         <div className="nameAndLogo">
           <p>Compramos juntos</p>
           <img
-            src="/public/logo_compramos_juntos.png"
+            src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713201823/logo_compramos_juntos_fykqoh.png"
             alt=""
             style={{ width: "300px", marginBottom: "40px" }}
           />

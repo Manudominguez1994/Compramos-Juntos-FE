@@ -232,7 +232,7 @@ function AllGroupsFilter() {
             </div>
           </div>
           <div className="comp-search-image">
-            <img src="public/emojione_shopping-cart.png" />
+            <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203072/emojione_shopping-cart_djk74y.png" />
           </div>
         </div>
         <div style={{ width: "85%" }}>
@@ -261,7 +261,7 @@ function AllGroupsFilter() {
                     </div>
                   </div>
                   <div className="target-create-img">
-                    <img src="/public/Vector naranja.png" />
+                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203098/Vector_naranja_qvupip.png" />
                   </div>
                 </div>
               </Link>
@@ -281,7 +281,7 @@ function AllGroupsFilter() {
                   </div>
                 </div>
                 <div className="target-create-img">
-                  <img src="/public/Vector gris.png" />
+                  <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203097/Vector_gris_gsntzt.png" />
                 </div>
               </div>
             </div>
@@ -298,21 +298,21 @@ function AllGroupsFilter() {
                     onClick={() => handleSetComponent(2, "Alimentos")}
                     className="thisCategory"
                   >
-                    <img src="/public/imagem_alimentos.png" />
+                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203078/imagem_alimentos_cjolio.png" />
                     <p style={{ marginTop: "30px" }}> Alimentos</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Higiene")}
                     className="thisCategory"
                   >
-                    <img src="/public/imagem_higiene.png" />
+                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203079/imagem_higiene_caztvz.png" />
                     <p style={{ marginTop: "30px" }}> Higiene</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Medicina")}
                     className="thisCategory"
                   >
-                    <img src="/public/imagem_medicina.png" />
+                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203080/imagem_medicina_wems6m.png" />
                     <p style={{ marginTop: "30px" }}>Medicina</p>
                   </div>
                 </div>
@@ -428,19 +428,19 @@ function AllGroupsFilter() {
             </div>
             <div className="container-img-comofunciona">
               <img
-                src="/public/Como_funciona1.png"
+                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203069/Como_funciona1_vdtfps.png"
                 className="img-comofunciona"
               />
               <img
-                src="/public/Como_funciona2.png"
+                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203070/Como_funciona2_er65zt.png"
                 className="img-comofunciona"
               />
               <img
-                src="/public/Como_funciona3.png"
+                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203071/Como_funciona3_avfbzo.png"
                 className="img-comofunciona"
               />
               <img
-                src="/public/Como funciona4.png"
+                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203069/Como_funciona4_rjf7c6.png"
                 className="img-comofunciona"
               />
             </div>
