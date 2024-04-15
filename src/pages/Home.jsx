@@ -20,8 +20,8 @@ export default function Home() {
         <div className="nameAndLogo">
           <p>Compramos juntos</p>
           <img
-            src="/public/logo_compramos_juntos.png"
-            alt=""
+            src="/logo_compramos_juntos.png"
+           
             style={{ width: "300px",marginBottom:"40px" }}
           />
           <div className="container-Add">
