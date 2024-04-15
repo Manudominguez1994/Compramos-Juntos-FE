@@ -79,7 +79,7 @@ const messagesEndRef = useRef(null); // Referencia al último elemento de la lis
             allChats.map((message) => (
               <div key={message._id} className="thisMessagge">
                 <div className="thisMessagge-img-user">
-                  <img src={message.userOwner.imagen} />
+                  <img src={message.userOwner.imagen}  style={{width:"50px",height:"50px"}}/>
                 </div>
                 <div className="thisMessagge-description-hour-date">
                   <div className={`thisMessagge-description-${message.userOwner._id === ActiveUserId.ActiveUserId ? 'owner' : 'back'}`}>
