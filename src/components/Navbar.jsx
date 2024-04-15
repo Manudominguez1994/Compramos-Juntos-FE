@@ -55,7 +55,7 @@ function MyNavbar({
           <div>
           <Navbar.Brand href="#home">
             <img
-              src="/src/assets/logo_compramos_juntos.png"
+              src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713201823/logo_compramos_juntos_fykqoh.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
