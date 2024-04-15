@@ -158,7 +158,7 @@ function GroupDetails() {
                 <div key={product._id} className="container-products-map-taget">
                   <div className="container-products-map-taget1">
                     <img
-                      src={`/public/${product.imagen}`}
+                      src={product.imagen}
                       style={{ width: "200px", marginBottom: "10px" }}
                     />
                     <p>{product.nombre}</p>
