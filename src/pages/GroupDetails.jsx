@@ -9,6 +9,7 @@ import { ProductsContext } from "../../context/product.context";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 //Imports Map
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import ClickMarker from "../components/ClickMarker";
@@ -143,7 +144,7 @@ function GroupDetails() {
             {clickedPosition !== null && <Marker position={clickedPosition} />}
             <ClickMarker setClickedPositionUser={setClickedPositionUser} />
             {clickedPositionUser !== null && (
-              <Marker position={clickedPositionUser} icon={customIcon} />
+              <Marker position={clickedPositionUser} ><HomeRoundedIcon/> </Marker>
             )}
           </MapContainer>
         </div>
