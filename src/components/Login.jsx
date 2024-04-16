@@ -58,7 +58,7 @@ export default function Login(props) {
 
   return (
     <div className="form-login-container">
-      <p className="title-login">Asceso</p>
+      <p className="title-login">Acceso</p>
       {errorMessage ? <p>{errorMessage}</p> : null}
       <form onSubmit={handleLogin}>
         <div>
