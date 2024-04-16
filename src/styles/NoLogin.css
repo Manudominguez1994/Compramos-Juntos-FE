@@ -2,7 +2,7 @@
 
 /*? Contedor inicio de sesion y registro */
 .classContainerLogSign {
-  height: 1000px;
+  min-height: 650px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   font-size: 54px;
+  padding-top: 30px;
 }
 
 /*? Contenedor de formularios de log and sign */
@@ -30,7 +30,7 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 .form-outline{
   margin-bottom: 15px;
@@ -124,7 +124,8 @@
   margin-top: 20px;
 }
 .title-login {
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   font-size: var(--font-size-header2);
   font-weight: bold;
 }

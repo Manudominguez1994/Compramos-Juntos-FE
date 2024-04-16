@@ -46,15 +46,16 @@
 .container-products-map {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
   width: 100%;
+  gap: 20px;
 }
 .container-products-map-taget {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex: 0 0 calc(20% - 20px);
-  width: 20%;
+  flex-basis: calc(20% - 20px);
+  width: 18%;
   box-sizing: border-box;
   margin-top: 20px;
 }
@@ -63,12 +64,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  width: 100%;
   margin-bottom: 10px;
   font-weight: bold;
   color: black;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
 .container-products-map-taget1:hover {
   border: 1px solid black;
 }

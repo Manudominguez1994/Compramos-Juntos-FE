@@ -246,7 +246,7 @@ function CreateGroup() {
                 <div className="form-info-create-group">
                   <div className="form-info-create-group-div-input">
                     <MDBInput
-                    style={{height:"50px"}}
+                    style={{height:"50px", height:"56px"}}
                       type="text"
                       name="name"
                       onChange={handleNameGroup}

@@ -11,7 +11,7 @@ import SendIcon from "@mui/icons-material/Send";
 function ChatComp(props) {
   const navigate = useNavigate();
   const ActiveUserId = useContext(AuthContext);
-  console.log(ActiveUserId.ActiveUserId);
+  // console.log(ActiveUserId.ActiveUserId);
   const groupId = props.thisGroup._id;
 
   //* Estado de chat
@@ -51,7 +51,7 @@ const messagesEndRef = useRef(null); // Referencia al último elemento de la lis
   //*Funcion que entregue todos los mensajes que hay en el chat
   const handleAllChat = async () => {
     try {
-      const response = await service.get("/chat/allChats");
+      const response = await service.get(`/chat/allChats/${groupId}`);
       setAllChats(response.data);
     } catch (error) {
       navigate(error);

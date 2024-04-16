@@ -308,21 +308,21 @@ function AllGroupsFilter() {
                     onClick={() => handleSetComponent(2, "Alimentos")}
                     className="thisCategory"
                   >
-                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203078/imagem_alimentos_cjolio.png" />
+                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203078/imagem_alimentos_cjolio.png" />
                     <p style={{ marginTop: "30px" }}> Alimentos</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Higiene")}
                     className="thisCategory"
                   >
-                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203079/imagem_higiene_caztvz.png" />
+                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203079/imagem_higiene_caztvz.png" />
                     <p style={{ marginTop: "30px" }}> Higiene</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Medicina")}
                     className="thisCategory"
                   >
-                    <img src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203080/imagem_medicina_wems6m.png" />
+                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203080/imagem_medicina_wems6m.png" />
                     <p style={{ marginTop: "30px" }}>Medicina</p>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ function AllGroupsFilter() {
                       key={product.id}
                       onClick={() => handleGroupFilterProduct(product.name)}
                     >
-                      <img src={product.image} />
+                      <img src={product.image} style={{width:"100%", padding:"0 5px 0 5px"}} />
 
                       <p style={{ marginTop: "30px" }}>{product.name}</p>
                     </div>

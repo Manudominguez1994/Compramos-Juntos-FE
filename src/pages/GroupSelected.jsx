@@ -515,7 +515,7 @@ function MyPageGroup() {
                       <div className="container-products-map-taget1">
                         <img
                           src={product.imagen}
-                          style={{ width: "200px", marginBottom: "10px" }}
+                          style={{width:"100%", marginBottom: "10px", padding:"5px 5px 0 5px " }}
                         />
                         <p>{product.nombre}</p>
                       </div>
@@ -743,41 +743,7 @@ function MyPageGroup() {
                 </TableContainer>
               </div>
             ) : null}
-
-            {/* {isAdmin && compValue === 2 ? (
-              <div>
-                <h5>Resumen de compra por producto:</h5>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Producto</th>
-                      <th>Cantidad</th>
-                      <th>Precio Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {thisGroup.products.map((product) => (
-                      <tr key={product._id}>
-                        <td>{product.nombre}</td>
-                        <td>
-                          {thisGroup.purchase.reduce((acc, purchase) => {
-                            if (purchase.productId === product._id) {
-                              return acc + purchase.quantity;
-                            }
-                            return acc;
-                          }, 0)}{" "}
-                          {product.unidad}
-                        </td>
-                        <td>{calculateProductTotal(product._id)} pesos</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                <h5>Precio total de la compra:</h5>
-                <p>{calculateTotal()} pesos</p>
-              </div>
-            ) : null} */}
-
+           
             {/* Participantes vista para admin */}
             {compValue === 1 && isAdmin ? (
               <div className="container-users">

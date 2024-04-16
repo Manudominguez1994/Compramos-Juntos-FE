@@ -22,7 +22,7 @@ export default function Home() {
           <img
             src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713201823/logo_compramos_juntos_fykqoh.png"
            
-            style={{ width: "300px",marginBottom:"40px" }}
+            style={{ width: "300px",marginBottom:"80px" }}
           />
           <div className="container-Add">
             <p style={{ fontSize: "16px" }}>Add ad here</p>

@@ -35,6 +35,8 @@ padding-left: 180px;
   margin-right: 15px;
 }
 .form-info-create-group-div-input{
+  height: 56px;
+  margin-bottom: 0;
   margin-right: 15px;
   width: 60%;
 }
