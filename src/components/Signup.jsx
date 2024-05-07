@@ -63,7 +63,7 @@ export default function Signup(props) {
   return (
     <div>
       <div className="form-signup-container">
-        <p className="title-sign">Crea una cuenta</p>
+        <p className="title-sign">Crear una cuenta</p>
         {errorMessage ? <p>{errorMessage}</p> : null}
         <form onSubmit={handleSignup}>
           <div className="form-signup ">
@@ -122,9 +122,9 @@ export default function Signup(props) {
         </form>
       </div>
       <p>
-        Ya tienes cuenta ?{" "}
+        Ya tienes cuenta?{" "}
         <Link onClick={() => props.handleSetButton(1)} className="link-style">
-          Inicar sesion
+          Iniciar sesion
         </Link>
       </p>
     </div>

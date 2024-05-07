@@ -40,7 +40,7 @@ export default function Home() {
               className={buttonSwitch === 2 ? "active" : ""}
               onClick={() => handleSetButton(2)}
             >
-              Registrase
+              Registrarse
             </button>           
           </div>
           <div className="form-cotainer-log-sign">

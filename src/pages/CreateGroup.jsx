@@ -277,7 +277,7 @@ function CreateGroup() {
                 </div>
                 <div className="container-map-title">
                   <div>
-                    <p>Seleccion una ubicacion de entrega en el mapa :</p>
+                    <p>Selecciona una ubicacion de entrega en el mapa :</p>
                   </div>
                   <div className="container-map">
                     <MapContainer
@@ -314,7 +314,7 @@ function CreateGroup() {
                     sx={{ m: 1, minWidth: 120 }}
                   >
                     <InputLabel id="demo-simple-select-standard-label">
-                      Categorias
+                      Categorías
                     </InputLabel>
                     <Select
                       labelId="demo-simple-select-label"

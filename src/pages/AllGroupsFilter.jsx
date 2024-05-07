@@ -24,7 +24,7 @@ function AllGroupsFilter() {
   const { allProducts } = useContext(ProductsContext);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [errorMessage, setError] = useState("");
-  const [errorSms , setErrorMessage] = useState("")
+  const [errorSms, setErrorMessage] = useState("");
 
   //* Grupos y grupos filtrados
   const [allGroups, setAllGroups] = useState([]);
@@ -204,7 +204,6 @@ function AllGroupsFilter() {
     setSearchProduct("");
   };
 
-
   return (
     <div>
       <Navbar
@@ -235,9 +234,18 @@ function AllGroupsFilter() {
                   <i class="fas fa-search fa-2x"></i>
                 </Button>
               </InputGroup>
-              <p style={{fontSize:"20px"}}>
-              
-              {errorMessage && <p className="error-message">{errorMessage} <button className="boton-atras" onClick={() => handleChangeComponent(1)}>Volver</button></p>}
+              <p style={{ fontSize: "20px" }}>
+                {errorMessage && (
+                  <p className="error-message">
+                    {errorMessage}{" "}
+                    <button
+                      className="boton-atras"
+                      onClick={() => handleChangeComponent(1)}
+                    >
+                      Volver
+                    </button>
+                  </p>
+                )}
               </p>
             </div>
           </div>
@@ -263,10 +271,9 @@ function AllGroupsFilter() {
                     </div>
                     <div className="create-description">
                       <p>
-                        Crear su nuevo colectivo de compras. Esta opción le
-                        permite iniciar un grupo para compras al por mayor, lo
-                        que le permite a usted y a otros ahorrar dinero
-                        comprando juntos.
+                        Esta opción le permite iniciar un colectivo de compra
+                        para comprar al por mayor, lo que le permite a Usted y a
+                        otros ahorrar dinero comprando juntos.
                       </p>
                     </div>
                   </div>
@@ -285,8 +292,9 @@ function AllGroupsFilter() {
                   </div>
                   <div className="create-description">
                     <p>
-                      Busque grupos existentes y únase a ellos para aprovechar
-                      precios más bajos en compras de productos al por mayor.
+                      Esta opción le permite unirse a un grupo: Busque grupos
+                      existentes y únase a ellos para aprovechar precios más
+                      bajos en la compra de productos al por mayor.
                     </p>
                   </div>
                 </div>
@@ -308,21 +316,30 @@ function AllGroupsFilter() {
                     onClick={() => handleSetComponent(2, "Alimentos")}
                     className="thisCategory"
                   >
-                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203078/imagem_alimentos_cjolio.png" />
+                    <img
+                      style={{ width: "100%", padding: "0 5px 0 5px" }}
+                      src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203078/imagem_alimentos_cjolio.png"
+                    />
                     <p style={{ marginTop: "30px" }}> Alimentos</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Higiene")}
                     className="thisCategory"
                   >
-                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203079/imagem_higiene_caztvz.png" />
+                    <img
+                      style={{ width: "100%", padding: "0 5px 0 5px" }}
+                      src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203079/imagem_higiene_caztvz.png"
+                    />
                     <p style={{ marginTop: "30px" }}> Higiene</p>
                   </div>
                   <div
                     onClick={() => handleSetComponent(2, "Medicina")}
                     className="thisCategory"
                   >
-                    <img style={{width:"100%", padding:"0 5px 0 5px"}} src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203080/imagem_medicina_wems6m.png" />
+                    <img
+                      style={{ width: "100%", padding: "0 5px 0 5px" }}
+                      src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203080/imagem_medicina_wems6m.png"
+                    />
                     <p style={{ marginTop: "30px" }}>Medicina</p>
                   </div>
                 </div>
@@ -338,7 +355,10 @@ function AllGroupsFilter() {
                       key={product.id}
                       onClick={() => handleGroupFilterProduct(product.name)}
                     >
-                      <img src={product.image} style={{width:"100%", padding:"0 5px 0 5px"}} />
+                      <img
+                        src={product.image}
+                        style={{ width: "100%", padding: "0 5px 0 5px" }}
+                      />
 
                       <p style={{ marginTop: "30px" }}>{product.name}</p>
                     </div>
@@ -352,7 +372,17 @@ function AllGroupsFilter() {
             <div className="container-allgroups-filter">
               <div className="title-allgroups">
                 <p>Grupos</p>
-               {errorSms && <p className="error-message">{errorSms}<button className="boton-atras" onClick={() => handleChangeComponent(1)}>Volver</button> </p>}
+                {errorSms && (
+                  <p className="error-message">
+                    {errorSms}
+                    <button
+                      className="boton-atras"
+                      onClick={() => handleChangeComponent(1)}
+                    >
+                      Volver
+                    </button>{" "}
+                  </p>
+                )}
               </div>
               {allGruopsFilterAdd.map((group) => (
                 <div key={group._id} style={{ width: "100%" }}>
@@ -443,7 +473,7 @@ function AllGroupsFilter() {
                 className="img-comofunciona"
               />
               <img
-                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1713203070/Como_funciona2_er65zt.png"
+                src="https://res.cloudinary.com/dgfqxvzld/image/upload/v1715074107/Como_funciona2_plxva8.png"
                 className="img-comofunciona"
               />
               <img

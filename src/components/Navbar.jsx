@@ -68,7 +68,7 @@ function MyNavbar({
             onClick={() => handleSetButton(2)}
             style={{ fontWeight: "bold" }}
           >
-            Resgistrarse
+            Registrarse
           </Nav.Link>
         </Container>
       ) : (
@@ -113,7 +113,7 @@ function MyNavbar({
                 Mi perfil
               </Link>
             </Nav.Link>
-            {" / "}
+            {" | "}
             <Nav.Link onClick={ejectHandLogOut} style={{ fontWeight: "bold" }}>
               Cerrar sesion
             </Nav.Link>
