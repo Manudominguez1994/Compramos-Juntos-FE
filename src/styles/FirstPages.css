@@ -82,6 +82,7 @@
 .create-title-description,
 .join-title-description {
   width: 60%; 
+  height: 250px;
   margin-right: 20px;
   padding-left: 20px; 
 }
