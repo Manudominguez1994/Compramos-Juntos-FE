@@ -189,7 +189,7 @@ function MyProfile() {
                               <div>
                                 <p>
                                   {" "}
-                                  Dia y hora de entrega:{" "}
+                                  Día y hora de entrega:{" "}
                                   {group.date
                                     .substring(0, 10)
                                     .split("-")
